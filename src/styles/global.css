@@ -1,3 +1,10 @@
+:root {
+  /*definer overordnet */
+
+  --content-width: 75rem;
+  --color-text: #ffff;
+}
+
 article {
   background: red;
 }
