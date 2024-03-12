@@ -4,25 +4,19 @@ import PillHeading from "./PillHeading.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/header_1.png"
-);
+const images = import.meta.glob<{ default: ImageMetadata }>("/src/assets/**/*.{jpeg,jpg,png,gif}");
 const { name, description, imgPath } = Astro.props;
-if (!images[imgPath])
-  throw new Error(
-    `"${imgPath}" does not exist in glob: "src/assets/header_1.png""`
-  );
+if (!images[imgPath]) throw new Error(`"${imgPath}" does not exist in glob: "src/assets/**/*.{jpeg,jpg,png,gif}"`);
 ---
-
 
 <article class="card">
   <h2>{name}</h2>
   <p>{description}</p>
   <Image src={images[imgPath]()} alt={name} />
 </article>
-<PillHeading/>
-<h1>TEXT TEXT </h1>
+<PillHeading />
+<h1>TEXT TEXT</h1>
 
 <style>
-/**BOX AROUND PILL AND TEXT */
+  /**BOX AROUND PILL AND TEXT */
 </style>
