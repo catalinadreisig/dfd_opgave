@@ -1,10 +1,16 @@
-:root {
-  /*definer overordnet */
+@layer reset, global,components,utilities;
 
-  --content-width: 75rem;
-  --color-text: #ffff;
-}
+@import url("./reset.css") layer(reset);
 
-article {
-  background: red;
+@layer global {
+  :root {
+    --content-width: 75rem;
+    --color-text: #181818;
+    --color-text-muted: #595566;
+  }
+
+  html {
+    line-height: 1.475;
+    color: var(--color-text-muted);
+  }
 }

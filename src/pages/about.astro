@@ -10,12 +10,7 @@ import ConsultBox from "../components/ConsultBox.astro";
 ---
 
 <Base>
-  <div>
-    <img src="" alt="Top billede" />
-    <DisplayText name="hdhfh" imgPath="src/assets/images/header_1.png" />
-  </div>
-
-  <Base>
+  <section class="full">
     <div>
       <img src="" alt="Top billede" />
       <DisplayText />
@@ -27,6 +22,26 @@ import ConsultBox from "../components/ConsultBox.astro";
     <VideoDivBig />
     <OurTeam />
     <ConsultBox />
-  </Base>
-  <style></style>
+  </section>
 </Base>
+
+<style>
+  section {
+    background: lightcoral;
+
+    display: grid;
+    grid-template-columns:
+      [full-start]1fr
+      [content]minmax(0, var(--content-width))
+      1fr [full-end];
+    gap: 1rem;
+
+    > * {
+      grid-column: content;
+    }
+
+    .full {
+      grid-column: full;
+    }
+  }
+</style>
