@@ -1,11 +1,57 @@
 ---
-import Hundred from "./Hundred.astro";
+import Hundred from "./Hundred.astro"; //SLET en her også samle alt heri???
 ---
 
-<p>NumBelt</p>
+<dl>
+  <div>
+    <dt>Succesfull Work</dt>
+    <dd>1128+</dd>
+  </div>
 
+  <div>
+    <dt>Team member</dt>
+    <dd>908+</dd>
+  </div>
+
+  <div>
+    <dt>Happy Costumers</dt>
+    <dd>258+</dd>
+  </div>
+
+  <div>
+    <dt>Creative Idea</dt>
+    <dd>564+</dd>
+  </div>
+</dl>
 <Hundred />
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    place-content: center;
+  }
+
+  dl {
+    margin: 3rem;
+    text-align: center;
+
+    display: flex;
+    gap: 3rem;
+
+    > * {
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 1.125rem;
+      color: #181818;
+
+      :last-child {
+        font-size: 3.125rem;
+        font-weight: 500;
+      }
+    }
+  }
   /**FLEX? */
 </style>
