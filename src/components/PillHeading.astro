@@ -1,12 +1,11 @@
 ---
-//const { color } = Astro.probs;
+const { text, color } = Astro.props;
 ---
 
-<!--**NOT DONE
-<h2 style=`style="--bg:${color}"`><slot /></h2>-->
+<div>{text}</div>
 <style>
   /**NOT DONE */
-  h2 {
+  div {
     color: #181818;
     font-family: Lato;
     font-size: 16px;
