@@ -1,4 +1,5 @@
 ---
+import Base from "../components/Base.astro";
 import DisplayText from "../components/DisplayText.astro";
 import IdeasDiv from "../components/IdeasDiv.astro";
 import NumBelt from "../components/NumBelt.astro";
@@ -6,17 +7,21 @@ import CoreBigDiv from "../components/CoreBigDiv.astro";
 import VideoDivBig from "../components/VideoDivBig.astro";
 import OurTeam from "../components/OurTeam.astro";
 import ConsultBox from "../components/ConsultBox.astro";
-
-
 ---
-
+<Base>
 <div>
     <img src="" alt="Top billede">
     <DisplayText/>
 </div>
+
 <IdeasDiv/>
 <NumBelt/>
 <CoreBigDiv/>
 <VideoDivBig/>
 <OurTeam/>
 <ConsultBox/>
+
+</Base>
+<style>
+
+</style>
