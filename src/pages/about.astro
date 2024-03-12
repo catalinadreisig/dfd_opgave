@@ -10,23 +10,34 @@ import ConsultBox from "../components/ConsultBox.astro";
 ---
 
 <Base>
-  <div>
-    <img src="" alt="Top billede" />
-    <DisplayText name="header_1.png" imgPath="src/assets/images/header_1.png" />
-  </div>
-
-  <Base>
-    <div>
-      <img src="" alt="Top billede" />
-      <DisplayText />
-    </div>
-
+  <section class="full">
+    <DisplayText />
     <IdeasDiv />
     <NumBelt />
     <CoreBigDiv />
     <VideoDivBig />
     <OurTeam />
     <ConsultBox />
-  </Base>
-  <style></style>
+  </section>
 </Base>
+
+<style>
+  section {
+    background: lightcoral;
+
+    display: grid;
+    grid-template-columns:
+      [full-start]1fr
+      [content]minmax(0, var(--content-width))
+      1fr [full-end];
+    gap: 1rem;
+
+    > * {
+      grid-column: content;
+    }
+
+    .full {
+      grid-column: full;
+    }
+  }
+</style>

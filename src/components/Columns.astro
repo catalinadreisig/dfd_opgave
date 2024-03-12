@@ -1,0 +1,16 @@
+const{(cols = 3)}=Astro.props;
+<div class="grid-container" style={`--cols:${cols}`}>
+  <slot />
+</div>
+
+<style>
+  .grid-containter {
+    display: grid;
+    gap: 1rem;
+    grid-column: feature;
+
+    @media (width>600px) {
+      grid-template-columns: repeat(var(--cols), 1fr);
+    }
+  }
+</style>
