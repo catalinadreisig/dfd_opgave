@@ -1,18 +1,29 @@
 ---
-const { text, color } = Astro.props;
+import "../styles/global.css";
+
+const { body = "bagde", color = "yellow_bg" } = Astro.props;
 ---
 
-<div>{text}</div>
+<div class={color}>
+  {body}
+</div>
+
 <style>
-  /**NOT DONE */
   div {
-    color: #181818;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 147.5%; /* 23.6px */
-    letter-spacing: 2.32px;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
+  }
+  .yellow {
+    background-color: var(--black);
+    color: var(--yellow_bg);
+  }
+  .green {
+    background-color: var(--white);
+    color: var(--green_bg);
   }
 </style>

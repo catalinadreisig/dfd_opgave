@@ -10,12 +10,22 @@ if (!images[imgPath]) throw new Error(`"${imgPath}" does not exist in glob: "src
 ---
 
 <article class="card">
-  <PillHeading text="SERVICES" color="yellow" />
-  <p>{body}</p>
+  <div>
+    <PillHeading body="SERVICES" color="yellow_bg" />
+    <p>{body}</p>
+  </div>
   <Image src={images[imgPath]()} alt={alt} />
 </article>
 
 <style>
-  img {
-  } /**BOX AROUND PILL AND TEXT */
+  div {
+    background-color: var(--fog_bg);
+    border-radius: 29px;
+    backdrop-filter: blur(5.5px);
+    display: inline-flex;
+    padding: 48px 60px 58px 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 </style>

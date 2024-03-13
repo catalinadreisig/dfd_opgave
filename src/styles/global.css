@@ -14,3 +14,17 @@
     color: var(--color-text-muted);
   }
 }
+
+:root {
+  /*COLORS:*/
+  /*FONTS*/
+  --white: #fff;
+  --black: #181818;
+
+  /**BACKGROUNDS*/
+  --green_bg: #4eaf4e;
+  --yellow_bg: #ffcc4a;
+  --lightgrey_bg: #f5f5f5;
+  --fog_bg: rgb(255, 255, 255, 0.85);
+  --white_bg: #fff;
+}
