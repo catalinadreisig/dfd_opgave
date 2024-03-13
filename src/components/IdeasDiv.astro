@@ -4,8 +4,46 @@ import PillHeading from "./PillHeading.astro";
 import CheckText from "./CheckText.astro";
 ---
 
-<PillHeading />
-<h2>Turn your ideas into reality.</h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
-<CheckText />
-<IdeasPic />
+<article>
+  <div>
+    <PillHeading body="OUR VISION" color="green" />
+    <h2>Turn your ideas into reality.</h2>
+    <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test. Override the digital divide with additional from DevOps.</p>
+    <CheckText />
+  </div>
+  <IdeasPic />
+</article>
+
+<style>
+  article {
+    width: 1920px;
+    top: -4900px;
+    left: -11311px;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 122px;
+    margin-top: 5%;
+  }
+  div {
+    display: flex;
+    width: 590px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+  }
+  h2 {
+    color: #181818;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%; /* 52.2px */
+  }
+  p {
+    color: #595566;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%; /* 23.6px */
+    width: 590px;
+  }
+</style>

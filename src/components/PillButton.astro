@@ -1,20 +1,37 @@
 ---
-//const{color}=Astro.probs;
+import "../styles/global.css";
+
+const { body = "bagde", color = "yellow_bg" } = Astro.props;
 ---
 
-<!--**NOT DONE
-<h2 style=`style="--bg:${color}"`><slot /></h2>-->
-<style>
-  /**NOT ONE */
+<div class={color}>
+  <p>{body}</p>
+</div>
 
-  <style>D
-        /**NOT DONE */
-    h2 {
-    display: flex;
-    width: 167px;
-    padding: 15px 34px;
-    align-items: flex-start;
-    gap: 10px;
-    flex-shrink: 0;
+<style>
+  div {
+  display: flex;
+  width: 167px;
+  padding: 15px 34px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;2px
+  gap: 10px;
+  border-radius: 42px;
+  }
+  p {
+    color: var(--white);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  }
+  .yellow {
+    background-color: var(--yellow_bg);
+    color: var(--black);
+  }
+  .black {
+    background-color: var(--black_bg);
+    color: var(--white);
   }
 </style>

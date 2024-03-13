@@ -5,25 +5,33 @@ const { body = "bagde", color = "yellow_bg" } = Astro.props;
 ---
 
 <div class={color}>
-  {body}
+  <p>{body}</p>
 </div>
 
 <style>
   div {
-    font-family: Lato;
+    display: flex;
+    padding: 0px 11px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 20px;
+  }
+  p {
+    text-align: center;
+    /*font-family: Lato; VIRKER IKKE MED DEN FONT IDK*/
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 147.5%; /* 23.6px */
-    letter-spacing: 0.15rem;
+    line-height: 147.5%;
+    letter-spacing: 2.32px;
     text-transform: uppercase;
   }
   .yellow {
-    background-color: var(--black);
-    color: var(--yellow_bg);
+    background-color: var(--yellow_bg);
+    color: var(--black);
   }
   .green {
-    background-color: var(--white);
-    color: var(--green_bg);
+    background-color: var(--green_bg);
+    color: var(--white);
   }
 </style>

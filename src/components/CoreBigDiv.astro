@@ -4,17 +4,24 @@ import FourGrid from "./FourGrid.astro";
 import PillHeading from "./PillHeading.astro";
 ---
 
-<p>CoreBigDiv</p>
-
-<PillHeading />
-<PillButton />
-<FourGrid />
-<FourGrid />
-<FourGrid />
-<FourGrid />
-
+<article>
+  <PillHeading body="GROWING WITH OUR CLIENTS" color="yellow" />
+  <PillButton body="Get in touch" color="black" />
+  <div>
+    <FourGrid title="Creative Ideas" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam." />
+    <FourGrid title="Best Features" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+    <FourGrid title="Experience" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget accumsan augue Donec aliquam." />
+    <FourGrid title="Easy Solutions" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+  </div>
+</article>
 <style>
-  * {
+  article {
     background: #f5f5f5;
+  }
+  div {
+    display: flex;
+    width: 1193px;
+    align-items: flex-start;
+    gap: 35px;
   }
 </style>

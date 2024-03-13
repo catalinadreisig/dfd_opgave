@@ -1,17 +1,47 @@
 ---
-
+import "../styles/global.css";
+const { title = "title", body = "bagde" } = Astro.props;
 ---
 
 <article>
   indsæt icon her
-  <h3>title</h3>
-  <p>hejsa</p>
+  <h3>{title}</h3>
+  <p>{body}</p>
   <a href="#0">Read more</a>
+  <img src="../assets/images/arrow.svg" alt="" />
 </article>
 
 <style>
   article {
-    background: #fff;
+    background: var(--white_bg);
     padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    padding: 36px 23px;
+    align-items: flex-start;
+    gap: 10px;
+    border: 1px solid #eaeaea;
+    width: 226px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  h3 {
+    color: var(--black);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 116%; /* 23.2px */
+  }
+  p {
+    color: var(--darkgrey);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.5%; /* 23.6px */
+  }
+
+  a {
+    color: var(--black);
   }
 </style>

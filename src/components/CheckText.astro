@@ -11,6 +11,7 @@
   ul {
     display: grid;
     gap: 1rem;
+    padding-left: 0;
   }
 
   li {
@@ -19,5 +20,13 @@
     gap: 1rem;
     font-size: 1rem;
     color: #595566;
+  }
+
+  li:before {
+    content: "";
+    flex-shrink: 0;
+    width: 1.6rem;
+    aspect-ratio: 1;
+    background: var(--checkmark-icon) 50% 50% / contain no-repeat;
   }
 </style>
