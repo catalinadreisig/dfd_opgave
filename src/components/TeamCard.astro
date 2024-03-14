@@ -1,4 +1,17 @@
 ---
 import PillHeading from "./PillHeading.astro";
 import SomeTeamCard from "./SomeTeamCard.astro";
+const { title = "title", body = "bagde", img = "picture", heading = "heading" } = Astro.props;
 ---
+
+<article>
+  <img src="{img)" alt="" />
+  <PillHeading {heading} />
+  <div>
+    <div>
+      <h3>{title}</h3>
+      <p>{body}</p>
+    </div>
+    <SomeTeamCard />
+  </div>
+</article>

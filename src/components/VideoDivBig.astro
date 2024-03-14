@@ -3,7 +3,69 @@ import PillHeading from "./PillHeading.astro";
 import VideoBoxAbout from "./VideoBoxAbout.astro";
 ---
 
-<PillHeading />
-<h1>HEADER GOES HERE</h1>
-<p>Text goes here</p>
-<VideoBoxAbout />
+<article>
+  <div>
+    <PillHeading body="OUR HISTORY" color="green" />
+    <div>
+      <h2>Better Website Means A User Experience</h2>
+      <p>Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</p>
+    </div>
+  </div>
+  <VideoBoxAbout />
+</article>
+
+<style>
+  article {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    :nth-child(2) {
+      width: 962px;
+      height: 369px;
+      flex-shrink: 0;
+      border-radius: 28px;
+      opacity: 0.4;
+    }
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+    :first-child {
+      display: flex;
+      padding: 0px 11px;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 11px;
+      :nth-child(1) {
+        color: var(--black);
+        text-align: center;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 116%;
+        width: 478px;
+        height: 106px;
+      }
+      :nth-child(2) {
+        color: var(--darkgrey);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 147.5%; /* 23.6px */
+        width: 732px;
+      }
+    }
+  }
+</style>
