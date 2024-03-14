@@ -4,23 +4,28 @@ const { title = "title", body = "bagde" } = Astro.props;
 ---
 
 <article>
-  indsæt icon her
-  <h3>{title}</h3>
-  <p>{body}</p>
-  <a href="#0">Read more</a>
-  <img src="../assets/images/arrow.svg" alt="" />
+  <div>
+    indsæt icon her
+    <h3>{title}</h3>
+    <p>{body}</p>
+    <a href="#0">Read more</a>
+    <img src="../assets/images/arrow.svg" alt="" />
+  </div>
 </article>
 
 <style>
   article {
-    background: var(--white_bg);
-    padding: 1rem;
-    border-radius: 20px;
     display: flex;
     padding: 36px 23px;
     align-items: flex-start;
     gap: 10px;
+    border-radius: 20px;
     border: 1px solid #eaeaea;
+    background: #fff;
+  }
+
+  div {
+    display: flex;
     width: 226px;
     flex-direction: column;
     align-items: flex-start;
