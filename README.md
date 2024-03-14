@@ -45,3 +45,10 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+REFLEKSION:
+Vi har i dette forløb lært en masse. Vi har fået genopfrisket astro. Vi har udviklet en masse kompetencer indenfor css og dets uendelige muligheder.
+Selve opgaven her vi har lavet, er langt fra hvad vi ønskede. Men grundet flere ting har vi ikke nået mere. Men når det så er sagt har vi igennem hele dette forløb lært ekstremt meget, som føles meget brugbart og som vi helt klart vil tage med videre og bruge af.
+Selve strukturen i undervisningen har været fantatisk og vi føler vi er blevet taget i hånden og fået virkelig god hjælp. Vi er blevet udfordret, men på den interresante og inspirende måde.
+Vi så gerne at vi var nået længere i vores opgave her...
+// Esther & Catalina
